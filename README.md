@@ -14,8 +14,16 @@ Building an application that can predict the occurrence of breast cancer or the 
 
 The application will be able to predict the occurrence of breast cancer by taking into account the following factors:
 
--
--
+- radius_mean
+- texture_mean 
+- perimeter_mean 
+- area_mean
+- smoothness_mean
+- compactness_mean
+- concavity_mean
+- concave_points_mean
+- symmetry_mean
+- fractal_dimension_mean
 
 ### Layout
 
