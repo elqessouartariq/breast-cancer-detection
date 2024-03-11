@@ -1,13 +1,7 @@
-"""This is the main module to run the app"""
-
-# Importing the necessary Python modules.
 import streamlit as st
+from Tabs import home, predict, visualise, about
+from web_functions import load_data
 
-# Import necessary functions from web_functions
-
-
-# Import pages
-from Tabs import home, data, predict, visualise, about
 
 # Configure the app
 st.set_page_config(
@@ -20,23 +14,15 @@ st.set_page_config(
 Tabs = {
     "Home": home,
     "About": about,
-    "Data Info": data,
     "Prediction": predict,
     "Visualisation": visualise
-
 }
 
-# Create a sidebar
-# Add title to sidear
 st.sidebar.title("Navigation")
 
-# Create radio option to select the page
 page = st.sidebar.radio("Pages", list(Tabs.keys()))
 
-# Loading the dataset.
-df = None
-X = None
-y = None
+df, X, y = load_data()
 
 # Call the app funciton of selected page to run
 if page in ["Prediction", "Visualisation"]:
