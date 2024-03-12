@@ -26,7 +26,6 @@ def app(df, X, y):
 
     # Create a list to store all the features
     features = [rad,tex,per,are,smo,com,con,sym,fad]
-    print("feat:",features)
 
     # Create a button to predict
     if st.button("Detect"):
