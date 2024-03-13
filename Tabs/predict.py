@@ -39,6 +39,3 @@ def app(df, X, y):
             st.warning("The person has Breast Cancer!!")
         else:
             st.success("The person is safe from Breast Cancer")
-
-        # Print teh score of the model
-        st.write("The model used is trusted by doctor and has an accuracy of ", round((score*100)),"%")

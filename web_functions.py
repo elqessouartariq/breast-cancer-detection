@@ -14,13 +14,7 @@ def load_data():
 
 @st.cache_resource()
 def train_model(X, y):
-    model = DecisionTreeClassifier(
-        ccp_alpha=0.0, class_weight=None, criterion='entropy',
-        max_depth=4, max_features=None, max_leaf_nodes=None,
-        min_impurity_decrease=0.0, min_samples_leaf=1,
-        min_samples_split=2, min_weight_fraction_leaf=0.0,
-        random_state=42, splitter='best'
-    )
+    model = DecisionTreeClassifier()
 
     model.fit(X, y)
     score = model.score(X, y)
