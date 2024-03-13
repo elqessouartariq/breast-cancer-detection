@@ -34,7 +34,6 @@ The application will be able to predict the occurrence of breast cancer by takin
 |   └─── home.py
 |   └─── predict.py
 |   └─── visualize.py
-|   └─── about.py
 └───__pycache__
 └─── main.py
 └─── web_functions.py
